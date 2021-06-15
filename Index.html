@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+   html,body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      color:wheat;
+      background-color:wheat;
+      
+    }
+    h1{
+      font-weight: 800;
+      font-family:  sans-serif;
+      animation: one 1s  alternate infinite ease-in-out;
+      font-size:4em;
+      
+    }
+    @keyframes one{
+      from{text-shadow: 0 0 20px transparent;}
+      to{text-shadow: 0 20px 70px rgba(0,0,0,0.8);}
+      100%{
+        color:black;
+      }
+      
+    }
+    
+  
+  
+ 
+
+.slide {
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  top:50%;
+  font-size:4em; 
+  text-shadow: 0 2px 5px rgba(100,232,304,0.7);
+  animation: slideup 5s ease infinite ,fadein 5s ease both,slidedown 5s ease both;
+  
+}
+@keyframes slideup{
+  from{transform: translateY(500%);}
+  to{transform: translateY(-250%);
+  display:none;
+    
+  }
+  100%{color:blue;}
+}
+@keyframes fadein{
+  from{opacity: 0;}
+  to{opacity:1;}
+}
+
+.slidedown {
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  bottom:50%;
+  font-size:4em; 
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  animation: munni 5s ease infinite ,fadeout 5s ease both,slidedown 5s ease both;
+  
+}
+@keyframes munni{
+  from{transform: translateY(-500%);}
+  to{transform: translateY(250%);
+  display:none;
+    
+  }
+  100%{color:green;}
+}
+@keyframes fadeout{
+  from{opacity: 0;}
+  to{opacity:1;}
+
+
+marquee h4 span{
+
+     top:50%;
+      
+  animation: mouni 0.5s ease infinite  alternate;
+  font-family: sans-serif;
+  font-size:5em;
+  text-shadow:2px 2px 2px yellowgreen;
+}
+
+
+ marquee h4 span:nth-child(1){
+  animation-delay: 0.1s;
+  
+}
+marquee h4 span:nth-child(2){
+  animation-delay: 0.2s;
+  
+}
+marquee h4 span:nth-child(3){
+  animation-delay: 0.3s;
+  
+}
+marquee h4 span:nth-child(4){
+  animation-delay: 0.4s;
+  
+}
+ marquee h4 span:nth-child(5){
+  animation-delay: 0.5s;
+  
+}
+marquee h4 span:nth-child(6){
+  animation-delay: 0.6s;
+  
+}
+marquee h4 span:nth-child(7){
+  animation-delay: 0.7s;
+  
+}
+@keyframes mouni
+{
+  100%{top:-50%;}
+}
+
+
+      
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+   <h1>Think Champ</h1>
+   <h2 class="slide">Think Champ</h2>
+  <h3 class="slidedown"> Think champ</h3>
+  
+  <marquee scrollamount="10" scrolldelay="50" >
+     <br> <br><br><h4 style="color:deeppink;font-size: 5em;">
+      <span>T</span>
+      <span>h</span>
+      <span>i</span>
+      <span>n</span>
+      <span>k&nbsp;</span>
+      <span>C</span>
+      <span>h</span>
+      <span>a</span>
+      <span>m</span>
+      <span>p</span>
+    </h4><br><br><br>
+  </marquee>
+</body>
+
+</html>
